@@ -5,6 +5,7 @@
 #ifndef ANSI_H
 #define ANSI_H
 
+
 void bgcolor(int background);
 void fgcolor(int foreground);
 void color(int foreground, int background);
@@ -16,6 +17,7 @@ void underline(char on);
 void blink(char on);
 void reverse(char on);
 void window(int x1, int y1, int x2, int y2, char *title, int style);
+
 
 
 

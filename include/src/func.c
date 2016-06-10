@@ -20,8 +20,6 @@ long conv_sin(int phi) {
 	return i;
 }
 
-
-
 void initVector(struct TVector *v) {
 	(*v).x = 10;
 	(*v).y = 20;
