@@ -24,7 +24,7 @@ void slidercreate(struct SLider *s, char startPosX, char startPosY){
 	int i;
 //init struct of slider
 	(*s).x1 = startPosX / 2 - 4;
-	(*s).x2 = startPosX / 2 + 8;
+	(*s).x2 = startPosX / 2 + 4;
 	(*s).y = startPosY-1;
 //Draw The slider
 	gotoxy(1,(*s).y);
