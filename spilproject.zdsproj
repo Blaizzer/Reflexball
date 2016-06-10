@@ -9,6 +9,8 @@
 <file filter-key="">include\src\func.c</file>
 <file filter-key="">include\src\LUT.c</file>
 <file filter-key="">include\src\LED.c</file>
+<file filter-key="">include\src\gameelements.c</file>
+<file filter-key="">include\gameelements.h</file>
 </files>
 
 <!-- configuration information -->
@@ -76,7 +78,7 @@
 <option name="shortsize" type="integer" change-action="rebuild">16</option>
 <option name="stdinc" type="string" change-action="compile"></option>
 <option name="strict" type="boolean" change-action="compile">true</option>
-<option name="usrinc" type="string" change-action="compile">C:\Users\Adam\Desktop\SpilBase\include</option>
+<option name="usrinc" type="string" change-action="compile">C:\Users\Morten\Dropbox\Programmeringsprojekt\SpilBase\include</option>
 <option name="watch" type="boolean" change-action="none">false</option>
 </options>
 </tool>
