@@ -41,6 +41,7 @@ void main() {
 	while(1){
 
 	sliderPos(&slider);
+
 	if (ballSpeed > 200){
 		ballPos(&Ball);
 		ballSpeed = 0;
@@ -52,6 +53,7 @@ void main() {
 	ballSpeed++;
 	gotoxy(15,15);
 	printf("%d", readKey());
+	printf("%d", slider.x2-slider.x1);
 /*		if (clock >=2){
 			shift++;
 			//reset the display
