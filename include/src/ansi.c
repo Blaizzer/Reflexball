@@ -129,6 +129,16 @@ void window(int x1, int y1, int x2, int y2, char *title, int style){
 			start = 180;
 			end = 195;
 			break;
+		case 3:
+			hor = 196;
+			ver = 179;
+			upleft = 218;
+			upright = 191;
+			downleft = 192;
+			downright = 217;
+			start = 180;
+			end = 195;
+			break;
 		default:
 			hor = 205;
 			ver = 186;
@@ -141,16 +151,22 @@ void window(int x1, int y1, int x2, int y2, char *title, int style){
 	}
 	
 //TOP
-	printf("%c%c", upleft, start);
+	if (style != 3){
+		printf("%c%c", upleft, start);
 	//Print top line of window
-	for(i = x1+2; i < x2-1; i++){
-		printf("%c", 32);
-	}
+		for(i = x1+2; i < x2-1; i++){
+			printf("%c", 32);
+		}
 	//Top end
-	printf("%c%c\n", end, upright);
-	
-
-	
+		printf("%c%c\n", end, upright);
+	} else {
+		printf("%c", upleft);
+		for(i = x1+1; i < x2; i++){
+			printf("%c", 196);
+		}
+		printf("%c\n",upright);
+	}
+		
 //MID
 	//Midt-section
 	for(j = y1+1; j < y2-1; j++){
@@ -163,20 +179,21 @@ void window(int x1, int y1, int x2, int y2, char *title, int style){
 	
 //BOT
 	//Bot bar
-	printf("%c", downleft);
-	for(i = x1; i < x2-1; i++){
-		printf("%c", hor);
-	}
-	printf("%c\n", downright);
-
+	if (style !=3){
+		printf("%c", downleft);
+		for(i = x1; i < x2-1; i++){
+			printf("%c", hor);
+		}
+		printf("%c\n", downright);
+	
 //Window title
-	j = 0;
-	gotoxy(x1+3,y1);
-	while(title[j] != '\0' && j < x2-6 ){
-		printf("%c", title[j]);
-		j++;
+		j = 0;
+		gotoxy(x1+3,y1);
+		while(title[j] != '\0' && j < x2-6 ){
+			printf("%c", title[j]);
+			j++;
+		}
 	}
 }
-
 
 
