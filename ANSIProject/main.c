@@ -18,7 +18,7 @@ void timer0int(){
 void main() {
 	char columm = 0, display = 0, i,  n, index, count = 0, shift = 1;
 	int posX2 = 100, posY2 = 50;
-	char data[] = "FISHGUTS  ";	
+	char data[] = "PENIS  ";	
 	struct SLider slider;
 	struct Ball Ball;
 	int ballSpeed = 0;
